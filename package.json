@@ -4,38 +4,38 @@
   "name": "chatmosphere",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
-    "@types/styled-components": "^5.1.21",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.9.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/styled-components": "^5.1.34",
+    "@vitejs/plugin-react": "^4.3.3",
     "env-cmd": "^10.1.0",
-    "immer": "^9.0.12",
-    "lodash": "^4.17.20",
-    "polished": "^4.1.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-feather": "^2.0.9",
-    "react-icons": "^4.1.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.0",
-    "react-zoom-pan-pinch": "^1.6.1",
-    "simple-zustand-devtools": "^1.0.0",
-    "styled-components": "^5.3.3",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0",
-    "zustand": "^3.6.9"
+    "immer": "^10.1.1",
+    "lodash": "^4.17.21",
+    "polished": "^4.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-feather": "^2.0.10",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.28.0",
+    "react-zoom-pan-pinch": "^3.6.1",
+    "simple-zustand-devtools": "^1.1.0",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.3",
+    "web-vitals": "^4.2.4",
+    "yarn": "^1.22.22",
+    "zustand": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "vite build",
     "build:demo": "env-cmd -f .env.demo.local react-scripts build && rm -rf demo && rm -rf app && mv build demo",
     "build:app": "env-cmd -f .env.app.local react-scripts build && rm -rf app && rm -rf demo && mv build app",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "vite test",
+    "eject": "echo 'Eject is not supported with Vite'"
   },
   "eslintConfig": {
     "extends": [
@@ -56,7 +56,12 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react-hooks": "^7.0.2",
-    "prettier": "2.2.1"
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@testing-library/react": "^16.0.1",
+    "prettier": "3.3.3",
+    "vite": "^4.0.0"
   }
 }
