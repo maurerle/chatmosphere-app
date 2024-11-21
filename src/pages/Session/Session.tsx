@@ -19,21 +19,21 @@ import { MoreTab } from "../../components/Footer/MoreTab/MoreTab"
 import { LocationPanel } from "../../components/LocationPanel/LocationPanel"
 import { ScreenSharing } from "../../components/Footer/ScreenSharing/ScreenSharing"
 import { useConferenceStore } from "../../store/ConferenceStore"
-import { useHistory, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { SettingsButton } from "../../components/Footer/SettingsButton/SettingsButton"
 import { SettingsDialog } from "../../components/Footer/SettingsButton/SettingsDialog"
 
 const Debug = () => {
 
 	const conferenceStore = useConferenceStore();
-	const history = useHistory()
+  const navigate = useNavigate()
 	const {id} = useParams()
 	React.useEffect(
 		() => {
 			console.log()
 			if (/sphere/i.test(conferenceStore.displayName)){
 
-				history.push(`/enter/${id}`)
+        navigate(`/enter/${id}`)
 			}
 
 

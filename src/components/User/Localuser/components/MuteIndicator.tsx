@@ -1,5 +1,5 @@
 import { useLocalStore } from '../../../../store/LocalStore';
-import {ReactComponent as MuteCat} from '../../../../assets/muteCatSmall.svg'
+import MuteCat from '../../../../assets/muteCatSmall.svg'
 import { MuteContainer } from '../../RemoteUser/MuteIndicator';
 
 

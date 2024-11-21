@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { useLocalStore } from "../../../store/LocalStore"
 import { checkLocalStorageBool, useConnectionStore } from "../../../store/ConnectionStore"
 import { Button } from "../../common/Buttons/Button"
-import produce from "immer"
+import { produce } from "immer"
 import { useConferenceStore } from "../../../store/ConferenceStore"
 import { jitsiInitOptions } from "../../JitsiConnection/jitsiOptions"
 

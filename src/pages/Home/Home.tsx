@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NameInputContainer } from './elements/NameInputContainer'
-import { ReactComponent as Wave } from './../../assets/wave.svg'
+import Wave from './../../assets/wave.svg'
 import {BigHeadline} from './../../components/common/BigHeadline'
 import { SubHeadline } from '../../components/common/SubHeadline'
 import { Info } from '../../components/common/Info/Info'

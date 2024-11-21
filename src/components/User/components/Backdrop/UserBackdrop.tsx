@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RefreshCcw } from 'react-feather'
 import styled from 'styled-components'
 import StageIcon from '../../../../assets/icons/StageIcon'
-import {ReactComponent as ReloadIcon} from '../../../../assets/reloadIcon.svg'
+import ReloadIcon from '../../../../assets/reloadIcon.svg'
 
 export const ReloadHint = ({children=null,callback=()=>null}) => {
 

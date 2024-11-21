@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { LocalStoreLogic } from '../../store/LocalStoreLogic'
 import { Room } from '../../components/Room/Room'
-import { ReactComponent as Wave } from './../../assets/wave.svg'
+import Wave from './../../assets/wave.svg'
 
 import { Footer } from '../../components/Footer/Footer'
 import { PanWrapper } from '../../components/PanWrapper/PanWrapper'

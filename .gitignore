@@ -24,3 +24,4 @@ yarn-error.log*
 app
 .env.demo
 .env.app
+dist
