@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { setConstantValue } from 'typescript'
 import { Info } from '../../../components/common/Info/Info'
 import { UserNameInputField } from '../../../components/UserNameInputField/UserNameInputField'
-// import create from 'zustand'
+// import { create } from "zustand"
 
 const Form = styled.form`
   width: 340px;

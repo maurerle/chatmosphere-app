@@ -1,4 +1,4 @@
-import create from "zustand"
+import { create } from "zustand"
 
 export const useAddonsStore = create((set:any, get:any) => {
 	return ({

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { conferenceName } from '../../../components/JitsiConnection/jitsiOptions';
 import { useConferenceStore } from '../../../store/ConferenceStore';
 import { NameInputForm } from './NameInputForm';
-import {useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export const NameInputContainer = () => {
 	const conferenceStore = useConferenceStore();
@@ -14,7 +14,7 @@ export const NameInputContainer = () => {
 
   	const [sessionName, setName] = useState<string>(conferenceName)
 	const setConferenceName = useConferenceStore(state => state.setConferenceName)
-	const history = useHistory()
+	const navigate = useNavigate()
 
 	const handleChange = (e) => {
 		setName(e.target.value)
@@ -28,7 +28,7 @@ export const NameInputContainer = () => {
 			setConferenceName(sessionName)
 			setConferenceUserName(userName)
 			if (! /sphere/i.test(userName)){
-				history.push(`/session/${sessionName}`)
+				navigate(`/session/${sessionName}`)
 			}
 		}
 	}

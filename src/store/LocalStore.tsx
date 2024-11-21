@@ -1,5 +1,5 @@
-import produce from "immer"
-import create from "zustand"
+import { produce } from "immer"
+import { create } from "zustand"
 import { useConferenceStore } from "./ConferenceStore"
 import { panOptions, transformWrapperOptions } from "../components/PanWrapper/panOptions"
 import { mountStoreDevtool } from "simple-zustand-devtools"

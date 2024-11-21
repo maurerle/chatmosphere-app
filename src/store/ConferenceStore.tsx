@@ -1,6 +1,6 @@
-import produce from 'immer';
+import { produce } from 'immer';
 import { mountStoreDevtool } from 'simple-zustand-devtools';
-import create from 'zustand';
+import { create } from "zustand";
 import { conferenceOptions } from '../components/JitsiConnection/jitsiOptions';
 import { getVolumeByDistance } from '../utils/VectorHelpers';
 import { useConnectionStore } from './ConnectionStore';

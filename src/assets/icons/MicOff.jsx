@@ -3,12 +3,10 @@
 function Icon() {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       version="1.1"
       viewBox="0 0 24 24"
-      style={{ WebkitPrintColorAdjust: "exact", fill:"none" }}
     >
       <g clipPath="url(#frame-clip-a6a78f70-94c5-11ec-a547-e7091bb4fd45-ed375f60-94c5-11ec-9f1c-11b5e9139405)">
         <defs>

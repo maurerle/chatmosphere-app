@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useRef } from "react"
 import styled from "styled-components"
-import create from "zustand"
+import { create } from "zustand"
 
 import { ErrorHandler } from "../../components/common/Info/ErrorHandler"
 import { useConnectionStore } from "./../../store/ConnectionStore"
