@@ -23,6 +23,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/enter/:id" element={<Enter />} />
+          /* TODO: redirect to "/enter" if this the first time the user in this conference */
           <Route path="/session/:id" element={<Session />} />
           <Route path="/screenshare/:id/:displayName/:linkPrimary" element={<ScreenShare />} />
           <Route path="/" element={<><Header>Chatmosphere</Header><Home /></>} />

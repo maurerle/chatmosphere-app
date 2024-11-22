@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InputField:any = styled.input`
+export const InputField: any = styled.input`
   margin-top: 5px;
   padding: 8px 5px;
   border: 1px solid ${props => props.theme.line.default};

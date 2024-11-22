@@ -1,5 +1,6 @@
 import { mountStoreDevtool } from "simple-zustand-devtools"
 import { create } from "zustand"
+import config from "../../config";
 import {
   getConnectionOptions,
   jitsiInitOptions,

@@ -8,10 +8,15 @@ export default defineConfig({
       // svgr options
     },
     include: '**/*.svg',
-    exportAsDefault: true
   }),
   react(), 
   ],
+  define: {
+    'process.env': {
+      REACT_APP_SERVICE_URL: JSON.stringify(process.env.VITE_REACT_APP_SERVICE_URL),
+      REACT_APP_DEMO_SESSION: JSON.stringify(process.env.VITE_REACT_APP_DEMO_SESSION),
+    },
+  },
   build: {
     rollupOptions: {
       input: './index.html',

@@ -24,7 +24,7 @@ export interface IJitsiInitOptions {
 
 // -------------------------
 
-export const conferenceName = process.env.REACT_APP_DEMO_SESSION || "chatmosphere"
+export const conferenceName = "chatmosphere"
 
 export const conferenceOptions = {
   openBridgeChannel: false, //what is this doing?
